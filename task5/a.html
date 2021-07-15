@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        video
+    </title>
+    <meta charset="UTF-8">
+    <meta name="description">
+</head>
+
+<body>
+    <!-- video=>element is used to show a video on a web page
+     controls=>attribute adds video controls
+     autoplay=>the clip works directly when the page is opened
+     muted=>video sound does not play directly when playing
+     width=>video width size
+     height=>video height size
+     poster=>show a picture before uploading the video
+     source=>element allows you to specify alternative video files which the browser may choose from.
+     src=>write in it the link or the name i have saved for the thing i want to design
+     type=>video type
+     track=>through it we add subtitles to the video and also specify the type of subtitles with more than one track
+     kind=>how many type 
+     srclang=>language abbreviation
+     label=>i add a specific language to the video according to what i want
+     If the browser does not support the video file that was created , a message appears instead of the video that the browser does not support(this is audio).
+     -->
+    <video controls autoplay muted width="500px" height="600px" poster="img/c.jpg">
+      <source src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.ogg" type="video/ogg">
+      <source src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.mp4" type="video/mp4">
+      <source src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.webm" type="video/webm">
+      <track src="myfile1.vtt" kind="subtitles" srclang="en" labal="English">
+      <track src="myfile2.vtt" kind="subtitles" srclang="ar" labal="Arabic">
+      this is the video
+    </video>
+</body>
+
+</html>
